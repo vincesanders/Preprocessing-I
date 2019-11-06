@@ -48,6 +48,9 @@ table {
 	border-spacing: 0;
 }
 
+//Import font from Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -55,5 +58,24 @@ table {
 
 html, body {
 	height: 100%;
+	font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	a {
+		text-decoration: none;
+		width: 10%;
+		color: black;
+	}
+}
+
+.cta {
+	background: steelblue;
+}
