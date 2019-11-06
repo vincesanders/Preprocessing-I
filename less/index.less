@@ -51,31 +51,166 @@ table {
 //Import font from Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+//Variables
+@primary-color: #252c3b;
+@highlight: #e6007e;
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
+html {
+	font-size: 62.5%;
 	font-family: 'Open Sans', sans-serif;
 }
 
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
 .container {
-	width: 90vw;
+	width: 60vw;
 	margin: 0 auto;
 }
 
 nav {
 	display: flex;
 	justify-content: flex-end;
+	margin: 3% 0;
 	a {
 		text-decoration: none;
-		width: 10%;
-		color: black;
+		padding-left: 3%;
+		color: @primary-color;
+		font-weight: bold;
+		text-align: right;
+	}
+	a:hover {
+		color: @highlight;
 	}
 }
 
 .cta {
-	background: steelblue;
+	display: flex;
+	flex-direction: column;
+	background: @primary-color;
+	padding: 6% 4%;
+	color: white;
+	img {
+		width: 30%;
+	}
+	h1 {
+		margin: 1% 0;
+		span {
+			color: @highlight;
+		}
+	}
+	h4 {
+		padding: 1% 0 2% 0;
+		border-bottom: 1px solid darkgray;
+	}
+	p {
+		margin: 2% 0;
+	}
+	button {
+		width: 20%;
+		padding: 1%;
+		font-size: 2rem;
+		background: transparent;
+		color: white;
+		border: 1px solid white;
+		border-radius: 4px;
+	}
+	button:hover {
+		background: @highlight;
+	}
+}//End of .cta
+
+.about-me {
+	display: flex;
+	justify-content: space-between;
+	margin: 2% auto;
+	.bio {
+		width: 48%;
+		h2 {
+			padding: 3% 0;
+		}
+	}
+	.skills {
+		width: 48%;
+		h3 {
+			padding: 3% 0;
+		}
+		ul {
+			width: 100%;
+			li {
+				width: 100%;
+				border: 1px solid lightgray;
+				padding: 1% 2%;
+				font-size: 1.8rem;
+			}//Ends li
+		}//Ends ul
+	}//Ends .skills
+}//Ends .about-me
+
+.work-history {
+	display: flex;
+	flex-direction: column;
+	table {
+		font-size: 1.8rem;
+		tr {
+			border-bottom: 1px solid lightgray;
+			th {
+				font-weight: bold;
+				text-align: left;
+				padding: 1.5%;
+				border-top: 1px solid lightgray;
+			}
+			td {
+				padding: 1.5%;
+			}
+			td:nth-child(1) {
+				font-weight: bold;
+			}
+		}//Ends tr
+		tr:nth-child(2), tr:nth-child(4) {
+			background: lavender;
+		}//Ends tr children
+	}//Ends table
+}//Ends .work-history
+
+footer {
+	display: flex;
+	background: @primary-color;
+	color: white;
+	justify-content: center;
+	margin-top: 6%;
+	padding: 2% 2% 4% 2%;
+	font-size: 1.4rem;
+	font-weight: bold;
 }
