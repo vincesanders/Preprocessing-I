@@ -1,1 +1,414 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import 'fontawesome-all.min.css';
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+.container {
+  width: 60vw;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3% 0;
+}
+nav a {
+  text-decoration: none;
+  padding-left: 3%;
+  color: #252c3b;
+  font-weight: bold;
+  text-align: right;
+}
+nav a:hover {
+  color: #e6007e;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  background: #252c3b;
+  padding: 6% 4%;
+  color: white;
+}
+.cta img {
+  width: 30%;
+}
+.cta h1 {
+  margin: 1% 0;
+}
+.cta h1 span {
+  color: #e6007e;
+}
+.cta h4 {
+  padding: 1% 0 2% 0;
+  border-bottom: 1px solid darkgray;
+}
+.cta p {
+  margin: 2% 0;
+}
+.cta button {
+  width: 20%;
+  padding: 1%;
+  font-size: 2rem;
+  background: transparent;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+}
+.cta button:hover {
+  background: #e6007e;
+}
+@media (max-width: 500px) {
+  .cta {
+    justify-content: center;
+  }
+  .cta img {
+    width: 100%;
+  }
+  .cta h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .cta button {
+    width: 60%;
+  }
+}
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% auto;
+}
+.about-me .bio {
+  width: 48%;
+}
+.about-me .bio h2 {
+  padding: 3% 0;
+}
+.about-me .skills {
+  width: 48%;
+}
+.about-me .skills h3 {
+  padding: 3% 0;
+}
+.about-me .skills ul {
+  width: 100%;
+}
+.about-me .skills ul li {
+  width: 100%;
+  border: 1px solid lightgray;
+  padding: 1% 2%;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .about-me {
+    flex-wrap: wrap;
+  }
+  .about-me .bio {
+    width: 96%;
+  }
+  .about-me .skills {
+    width: 96%;
+  }
+}
+.work-history {
+  display: flex;
+  flex-direction: column;
+}
+.work-history table {
+  font-size: 1.8rem;
+}
+.work-history table tr {
+  border-bottom: 1px solid lightgray;
+}
+.work-history table tr th {
+  font-weight: bold;
+  text-align: left;
+  padding: 1.5%;
+  border-top: 1px solid lightgray;
+}
+@media (max-width: 500px) {
+  .work-history table tr th {
+    border: 1px solid lightgray;
+  }
+}
+.work-history table tr td {
+  padding: 1.5%;
+}
+@media (max-width: 500px) {
+  .work-history table tr td {
+    border: 1px solid lightgray;
+  }
+}
+.work-history table tr td:nth-child(1) {
+  font-weight: bold;
+}
+.work-history table tr:nth-child(2),
+.work-history table tr:nth-child(4) {
+  background: lavender;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background: #252c3b;
+  color: white;
+  justify-content: center;
+  margin-top: 6%;
+  padding: 2% 2% 4% 2%;
+  font-size: 1.4rem;
+}
+footer div {
+  width: 100%;
+}
+footer .contact-intro h2 {
+  border-bottom: 1px solid rgba(240, 240, 240, 0.2);
+  padding: 1.5% 0;
+}
+footer .contact-intro p {
+  padding: 1.5% 0;
+}
+footer .contact-form {
+  display: flex;
+  justify-content: space-between;
+}
+footer .contact-form form {
+  width: 48%;
+}
+footer .contact-form form .field {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5% 0;
+}
+footer .contact-form form .field input {
+  background-color: rgba(240, 240, 240, 0.2);
+  color: white;
+  border: 1px solid rgba(240, 240, 240, 0.5);
+}
+footer .contact-form form .field textarea {
+  background-color: rgba(240, 240, 240, 0.2);
+  color: white;
+  border: 1px solid rgba(240, 240, 240, 0.5);
+}
+footer .contact-form form .field label {
+  font-size: 1.8rem;
+}
+footer .contact-form form button {
+  padding: 1%;
+  font-size: 2rem;
+  background: transparent;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid rgba(240, 240, 240, 0.5);
+  padding: 3% 5%;
+  margin: 5% 0;
+}
+footer .contact-form form button:hover {
+  background: #e6007e;
+}
+footer .contact-form .contact {
+  width: 48%;
+  color: rgba(240, 240, 240, 0.5);
+}
+footer .contact-form .contact li {
+  display: flex;
+  margin-bottom: 4%;
+  align-items: center;
+}
+footer .contact-form .contact li i {
+  font-size: 2.5rem;
+  width: 10%;
+  text-align: center;
+  margin-right: 5%;
+}
+footer .contact-form .contact li i:hover {
+  color: rgba(240, 240, 240, 0.8);
+}
+footer .contact-form .contact li a {
+  text-decoration: none;
+  color: rgba(240, 240, 240, 0.5);
+}
+footer .contact-form .contact li a:hover {
+  text-decoration: underline;
+}
+footer .copyright {
+  margin-top: 2%;
+  padding-top: 2%;
+  border-top: 1px solid rgba(240, 240, 240, 0.5);
+  color: rgba(240, 240, 240, 0.5);
+}
+@media (max-width: 500px) {
+  footer .contact-form {
+    flex-wrap: wrap;
+  }
+  footer .contact-form form {
+    width: 96%;
+  }
+  footer .contact-form .contact {
+    width: 96%;
+  }
+}

@@ -3,8 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>My Resume</title>
+  <title>Vincent Sanders' Resume</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -14,6 +17,106 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+      <header>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+          </nav>
+        </header>
+        <section class="cta">
+          <img src="images/vincent-sanders-2.jpg" alt="photo of Vincent Sanders">
+          <h1><span>Vincent Sanders</span> - Full-Stack Web Developer</h1>
+          <h4>Technology is my jam!</h4>
+          <p>Occasionally I have time to work on side projects. If you're interested, let me know by clicking the button below and signing up.</p>
+          <button>let's Team Up</button>
+        </section>
+        <section class="about-me">
+          <div class="bio">
+            <h2>About Me...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam a omnis deleniti qui optio. Eos, aut perferendis. Neque architecto quasi doloremque impedit suscipit, ullam consequuntur illo possimus voluptate nulla ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illum temporibus enim quasi, tempore tenetur ipsum adipisci, tempora deleniti accusamus corrupti iure?</p>
+          </div>
+          <div class="skills">
+            <h3>Stuff I'm Good At:</h3>
+            <ul>
+              <li>HTML, CSS and javascript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Java</li>
+              <li>C++</li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-history">
+          <h3>Work History</h3>
+          <table>
+            <tr>
+              <th>Years</th>
+              <th>Company</th>
+              <th>Title</th>
+              <th>Tech Used</th>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Google</td>
+              <td>Software Engineer</td>
+              <td>Java & Javascript</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Facebook</td>
+              <td>Software Engineer II</td>
+              <td>React & Node.js</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Microsoft</td>
+              <td>Tech Lead</td>
+              <td>C++, Java & Noder.js</td>
+            </tr>
+          </table>
+        </section>
+        <footer>
+          <div class="contact-intro">
+              <h2 class="major">Get in touch</h2>
+              <p>I'm currently attending Lambda School's full-time bootcamp for full-stack web development. However, I plan to start job hunting in February 2020. If you would like to contact me about job oportunities or for project collaboration, please use the form below.</p>
+          </div>
+          <div class="contact-form">
+              <form method="post" action="#">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" rows="4"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+              </form>
+              <ul class="contact">
+                <li>
+                  <i class="fas fa-home"></i>
+                  Vincent Sanders<br />
+                  106 W 20th St<br />
+                  Higginsville, MO 64037
+                </li>
+                <li><i class="fas fa-phone"></i>(660) 251-0779</li>
+                <li><i class="fas fa-envelope"></i><a href="#">vincesanders@hotmail.com</a></li>
+                <li><i class="fab fa-twitter"></i><a href="#">twitter.com/krayziesensei</a></li>
+                <li><i class="fab fa-facebook-f"></i><a href="#">facebook.com/vincesanders</a></li>
+                <li><i class="fab fa-github"></i><a href="#">github.com/vincesanders</a></li>
+              </ul>
+          </div>
+          <div class="copyright">
+            <p>Vincent Sanders All rights reserved.</p>
+          </div>
+        </footer>
+  </div>
 </body>
 </html>
